@@ -1,0 +1,46 @@
+* {
+    color: white;
+    background-color: #292929;
+    letter-spacing: 1px;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    min-width: 400px;
+    padding: 20px;
+    overflow: auto; 
+}
+
+#main-container {
+    display: block;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 10vh;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+#config-content-container {
+    width: fit-content;
+    padding: 10px;
+    min-width: 200px; 
+    max-height: 300px; 
+    overflow: auto; 
+    border: 1px solid #ccc; 
+}
+
+#file-content-container {
+    width: 65vw;
+    text-align: left;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+button {
+    margin-top: 10px;
+    width: auto;
+}
