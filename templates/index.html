@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
     <title>Home Page</title>
 </head>
 <body>
     <div id="main-container">
         <h1>Schedule routine</h1>
         <p>Edit the content of a config file.</p>
+    
+    <!--
+        TODO: Add a way to specify whether you want to edit files or add devices
+    -->
 
         <div id="config-content-container">
             <label for="files-dropdown">Select an option:</label>
@@ -20,6 +27,6 @@
         <button type="button" id="save-button"/>
 
     </div>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
 </body>
 </html>

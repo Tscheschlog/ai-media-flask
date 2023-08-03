@@ -1,0 +1,16 @@
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#playbook-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#time-of-day {
+    margin-top: 10px;
+}

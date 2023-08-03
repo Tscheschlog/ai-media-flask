@@ -2,7 +2,7 @@ let button = document.getElementById('save-button');
 let dropdown = document.getElementById('files-dropdown')
 
 //-------------------------------------------------------------------------------------------
-// Fetch file names from the Flask endpoint and populate the dropdown
+/// Fetch file names from the Flask endpoint and populate the dropdown
 //-------------------------------------------------------------------------------------------
 fetch('/api/get_files')
 .then(response => response.json())
@@ -18,7 +18,7 @@ fetch('/api/get_files')
 .catch(error => console.error('Error fetching file names:', error));
 
 //-------------------------------------------------------------------------------------------
-// Display the contents of the selected config file
+/// Display the contents of the selected config file
 //-------------------------------------------------------------------------------------------
 dropdown.addEventListener('change', function() {
     const selectedFileName = this.value; // Get the selected file name
@@ -41,7 +41,7 @@ dropdown.addEventListener('change', function() {
 });
 
 //-------------------------------------------------------------------------------------------
-// Write the contents to the selected config
+/// Write the contents to the selected config
 //-------------------------------------------------------------------------------------------
 button.innerText = "Write to Config";
 button.addEventListener('click', () => {

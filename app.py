@@ -9,7 +9,7 @@ app.static_folder = 'static'
 ####################################################################
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('schedule.html')
 
 ####################################################################
 # Get a list of all files in the 'configs' directory
